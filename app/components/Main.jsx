@@ -1,14 +1,17 @@
-var React = require('react');
-var Navigation = require('Navigation');
+const React = require('react');
+const Navigation = require('Navigation');
 
-var Main = (props) => {
+const Main = (props) => {
     return (
         <div>
          <Navigation/>
-          <h1 className="text-center">Main.jsx rendered</h1>
-          {props.children}
+         <div className="row">
+            <div className="column small-centered medium-6 large-4">
+                {props.children}
+            </div>
+         </div>
         </div>
-    )
-};
+    );
+}
 
 module.exports = Main;
